@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yasser Farag × Premier Ballet Academy — Creative Approval Package</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --burgundy: #6B1A2A;
+      --gold: #C9A84C;
+      --gold-light: #E8C97A;
+      --charcoal: #1A1A1A;
+      --charcoal-mid: #2D2D2D;
+      --nude: #F5EDE3;
+      --white: #FFFFFF;
+      --text-muted: #888;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--charcoal);
+      color: var(--white);
+      line-height: 1.7;
+    }
+
+    /* ── HERO ─────────────────────────────────────── */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(160deg, #0d0d0d 0%, #1a0a0f 50%, #2a1020 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -20%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(ellipse, rgba(201,168,76,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-badge {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(201,168,76,0.4);
+      padding: 8px 20px;
+      border-radius: 2px;
+      margin-bottom: 36px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(36px, 6vw, 72px);
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--white);
+      max-width: 820px;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .hero-sub {
+      margin-top: 20px;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .hero-divider {
+      width: 60px;
+      height: 1px;
+      background: var(--gold);
+      margin: 32px auto;
+      opacity: 0.6;
+    }
+
+    .hero-meta {
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 1px;
+    }
+
+    .scroll-hint {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,0.3);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .scroll-hint::after {
+      content: '';
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(to bottom, rgba(201,168,76,0.5), transparent);
+    }
+
+    /* ── DISCLAIMER BANNER ────────────────────────── */
+    .disclaimer {
+      background: rgba(201,168,76,0.08);
+      border: 1px solid rgba(201,168,76,0.25);
+      border-left: 4px solid var(--gold);
+      margin: 0 auto;
+      max-width: 900px;
+      padding: 20px 28px;
+      border-radius: 4px;
+      margin-top: 48px;
+      margin-bottom: 0;
+    }
+
+    .disclaimer p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.7);
+      font-style: italic;
+    }
+
+    .disclaimer strong {
+      color: var(--gold);
+      font-style: normal;
+    }
+
+    /* ── SECTION WRAPPER ──────────────────────────── */
+    .section {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 80px 24px;
+    }
+
+    .section-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(26px, 4vw, 42px);
+      font-weight: 600;
+      color: var(--white);
+      line-height: 1.25;
+      margin-bottom: 20px;
+    }
+
+    .section-intro {
+      font-size: 15px;
+      color: rgba(255,255,255,0.6);
+      max-width: 640px;
+      margin-bottom: 48px;
+      line-height: 1.8;
+    }
+
+    .gold-rule {
+      width: 48px;
+      height: 2px;
+      background: var(--gold);
+      margin-bottom: 32px;
+    }
+
+    /* ── ARABIC PITCH ─────────────────────────────── */
+    .arabic-card {
+      background: linear-gradient(135deg, var(--burgundy) 0%, #3d0f1a 100%);
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 8px;
+      padding: 48px;
+      text-align: right;
+      direction: rtl;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .arabic-card::before {
+      content: '"';
+      position: absolute;
+      top: -20px;
+      right: 32px;
+      font-family: 'Playfair Display', serif;
+      font-size: 200px;
+      color: rgba(201,168,76,0.06);
+      line-height: 1;
+    }
+
+    .arabic-card p {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(16px, 2.5vw, 22px);
+      line-height: 2;
+      color: rgba(255,255,255,0.9);
+      position: relative;
+      z-index: 1;
+    }
+
+    .arabic-card .arabic-sig {
+      margin-top: 28px;
+      font-size: 12px;
+      letter-spacing: 2px;
+      color: var(--gold);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      direction: rtl;
+    }
+
+    /* ── VISUAL IDENTITY ──────────────────────────── */
+    .palette-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .swatch {
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .swatch-color {
+      height: 80px;
+    }
+
+    .swatch-info {
+      background: var(--charcoal-mid);
+      padding: 12px 14px;
+    }
+
+    .swatch-name {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+
+    .swatch-hex {
+      font-size: 10px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .swatch-role {
+      font-size: 10px;
+      color: var(--gold);
+      margin-top: 4px;
+    }
+
+    .type-card {
+      background: var(--charcoal-mid);
+      border-radius: 6px;
+      padding: 28px;
+      margin-bottom: 16px;
+    }
+
+    .type-label {
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    /* ── IMAGE ASSIGNMENT TABLE ───────────────────── */
+    .img-assign {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    @media (max-width: 640px) {
+      .img-assign { grid-template-columns: 1fr; }
+    }
+
+    .img-assign-card {
+      background: var(--charcoal-mid);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .img-assign-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .img-assign-body {
+      padding: 20px;
+    }
+
+    .img-role-badge {
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 2px;
+      margin-bottom: 10px;
+    }
+
+    .badge-hero { background: var(--burgundy); color: var(--gold-light); }
+    .badge-bts  { background: rgba(201,168,76,0.15); color: var(--gold); }
+
+    .img-assign-body h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 16px;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .img-assign-body p {
+      font-size: 12px;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.7;
+    }
+
+    /* ── VISUALS GALLERY ──────────────────────────── */
+    .visuals-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 640px) {
+      .visuals-grid { grid-template-columns: 1fr; }
+    }
+
+    .visual-card {
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--charcoal-mid);
+      border: 1px solid rgba(255,255,255,0.06);
+      transition: transform 0.3s ease;
+    }
+
+    .visual-card:hover { transform: translateY(-4px); }
+
+    .visual-card img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .visual-card-body {
+      padding: 20px;
+    }
+
+    .visual-num {
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+
+    .visual-card-body h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 17px;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .visual-card-body p {
+      font-size: 12px;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.7;
+    }
+
+    .visual-tag {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 4px 10px;
+      border-radius: 2px;
+    }
+
+    /* ── HERO POST ────────────────────────────────── */
+    .hero-post-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    @media (max-width: 700px) {
+      .hero-post-layout { grid-template-columns: 1fr; }
+    }
+
+    .hero-post-mock {
+      background: var(--charcoal-mid);
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .hero-post-mock img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hero-post-overlay {
+      padding: 20px;
+      background: linear-gradient(to bottom, rgba(107,26,42,0.15), rgba(26,26,26,0.95));
+    }
+
+    .hero-post-headline {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-style: italic;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    .hero-post-sub {
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+    }
+
+    .caption-block {
+      background: var(--charcoal-mid);
+      border-radius: 8px;
+      padding: 28px;
+      border-left: 3px solid var(--burgundy);
+    }
+
+    .caption-block h4 {
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    .caption-block p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.9;
+      margin-bottom: 16px;
+    }
+
+    .caption-block .caption-cta {
+      font-size: 12px;
+      color: rgba(255,255,255,0.5);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 16px;
+      line-height: 1.8;
+    }
+
+    /* ── SCRIPT ───────────────────────────────────── */
+    .script-timeline {
+      position: relative;
+      padding-left: 32px;
+    }
+
+    .script-timeline::before {
+      content: '';
+      position: absolute;
+      left: 8px;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+    }
+
+    .script-beat {
+      position: relative;
+      margin-bottom: 32px;
+    }
+
+    .script-beat::before {
+      content: '';
+      position: absolute;
+      left: -28px;
+      top: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      border: 2px solid var(--charcoal);
+    }
+
+    .script-time {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+
+    .script-direction {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-style: italic;
+      margin-bottom: 8px;
+    }
+
+    .script-line {
+      background: var(--charcoal-mid);
+      border-radius: 6px;
+      padding: 16px 20px;
+      font-size: 15px;
+      color: var(--white);
+      line-height: 1.7;
+      border-left: 3px solid var(--burgundy);
+    }
+
+    /* ── CTA PROTOCOL ─────────────────────────────── */
+    .cta-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    @media (max-width: 640px) {
+      .cta-cards { grid-template-columns: 1fr; }
+    }
+
+    .cta-card {
+      background: var(--charcoal-mid);
+      border-radius: 8px;
+      padding: 28px;
+      border-top: 3px solid var(--gold);
+    }
+
+    .cta-card h4 {
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    .cta-card .response-bubble {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 8px;
+      padding: 16px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.8;
+    }
+
+    .cta-rule {
+      background: rgba(107,26,42,0.25);
+      border: 1px solid rgba(107,26,42,0.5);
+      border-radius: 6px;
+      padding: 20px 24px;
+      margin-bottom: 28px;
+    }
+
+    .cta-rule p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.7);
+    }
+
+    .cta-rule strong {
+      color: var(--gold);
+    }
+
+    /* ── FOOTER ───────────────────────────────────── */
+    footer {
+      background: #0d0d0d;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      text-align: center;
+      padding: 48px 24px;
+    }
+
+    footer .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      color: var(--white);
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    footer .footer-logo span { color: var(--gold); }
+
+    footer p {
+      font-size: 11px;
+      color: rgba(255,255,255,0.25);
+      letter-spacing: 1px;
+    }
+
+    /* ── SECTION DIVIDER ──────────────────────────── */
+    .section-divider {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-divider hr {
+      border: none;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    /* ── DARK SECTION ─────────────────────────────── */
+    .section-dark {
+      background: #111;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">Creative Approval Package — Confidential</div>
+    <h1>Yasser Farag <em>&times;</em><br/>Premier Ballet Academy</h1>
+    <p class="hero-sub">Drama &amp; Acting Masterclass · Maadi &amp; Tagamoa · April 2026</p>
+    <div class="hero-divider"></div>
+    <p class="hero-meta">Prepared by the PBA Creative Team · April 2, 2026</p>
+    <div class="scroll-hint">Scroll to review</div>
+  </section>
+
+  <!-- DISCLAIMER -->
+  <div class="section" style="padding-bottom: 0;">
+    <div class="disclaimer">
+      <p><strong>Note to Yasser Farag:</strong> The visual concepts presented in this document are <strong>initial creative directions only</strong> and are not final production assets. They are intended solely to communicate the visual tone, color palette, and campaign feel for your review and feedback. Final photography and design will be produced with your direct involvement and approval.</p>
+    </div>
+  </div>
+
+  <!-- ARABIC PITCH -->
+  <section class="section">
+    <div class="section-label">Section 01</div>
+    <h2 class="section-title">Executive Summary</h2>
+    <div class="gold-rule"></div>
+    <p class="section-intro">A personal message from the Premier Ballet Academy team, addressed directly to Yasser Farag.</p>
+
+    <div class="arabic-card">
+      <p>أستاذ ياسر، هذا التعاون مع أكاديمية بريميير للباليه ليس مجرد دورة تدريبية، بل هو ترسيخ لصورتك كـ "عرّاب" وموجّه أكاديمي في أرقى مجتمعات المعادي والتجمع. نحن ندمج بين الانضباط الصارم للباليه الروسي والعمق النفسي للتمثيل، لنقدمك للجمهور كخبير يصنع شخصيات قيادية، وليس فقط ممثلين. هذه الحملة مصممة لتعكس الرقي، الاحترافية، والأثر الحقيقي الذي تتركه في الجيل الجديد.</p>
+      <div class="arabic-sig">Premier Ballet Academy · أكاديمية بريميير للباليه</div>
+    </div>
+  </section>
+
+  <div class="section-divider"><hr/></div>
+
+  <!-- VISUAL IDENTITY -->
+  <section class="section">
+    <div class="section-label">Section 02</div>
+    <h2 class="section-title">Visual Identity &amp; Look &amp; Feel</h2>
+    <div class="gold-rule"></div>
+    <p class="section-intro">The campaign merges the theatrical world's dramatic richness with PBA's established premium aesthetic — creating a visual language that is both prestigious and deeply artistic.</p>
+
+    <h3 style="font-family:'Playfair Display',serif; font-size:20px; color:var(--gold); margin-bottom:24px; font-weight:400;">Color Palette</h3>
+    <div class="palette-grid">
+      <div class="swatch">
+        <div class="swatch-color" style="background:#6B1A2A;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Theater Burgundy</div>
+          <div class="swatch-hex">#6B1A2A</div>
+          <div class="swatch-role">Primary — Prestige</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#C9A84C;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Stage Gold</div>
+          <div class="swatch-hex">#C9A84C</div>
+          <div class="swatch-role">Primary — Excellence</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#F5EDE3;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">PBA Nude</div>
+          <div class="swatch-hex">#F5EDE3</div>
+          <div class="swatch-role">Secondary — Ballet</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#FFFFFF; border:1px solid rgba(255,255,255,0.1);"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Clean White</div>
+          <div class="swatch-hex">#FFFFFF</div>
+          <div class="swatch-role">Secondary — Clarity</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#1A1A1A;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Deep Charcoal</div>
+          <div class="swatch-hex">#1A1A1A</div>
+          <div class="swatch-role">Background — Depth</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-family:'Playfair Display',serif; font-size:20px; color:var(--gold); margin-bottom:24px; font-weight:400;">Typography</h3>
+    <div class="type-card">
+      <div class="type-label">Headlines &amp; Display</div>
+      <p style="font-family:'Playfair Display',serif; font-size:32px; color:var(--white); line-height:1.2;">Where Discipline Meets Drama</p>
+      <p style="font-size:11px; color:var(--text-muted); margin-top:8px;">Playfair Display — Serif · Authority &amp; Artistic Heritage</p>
+    </div>
+    <div class="type-card">
+      <div class="type-label">Body Copy &amp; Labels</div>
+      <p style="font-family:'Montserrat',sans-serif; font-size:15px; color:rgba(255,255,255,0.75); line-height:1.8;">Premier Ballet Academy is honored to announce a groundbreaking addition to our artistic curriculum.</p>
+      <p style="font-size:11px; color:var(--text-muted); margin-top:8px;">Montserrat — Sans-serif · Modern Accessibility &amp; Clarity</p>
+    </div>
+  </section>
+
+  <div class="section-divider"><hr/></div>
+
+  <!-- IMAGE ASSIGNMENT -->
+  <section class="section section-dark" style="background:#111; max-width:100%; padding:80px 0;">
+    <div style="max-width:960px; margin:0 auto; padding:0 24px;">
+      <div class="section-label">Section 03</div>
+      <h2 class="section-title">Image Usage Strategy</h2>
+      <div class="gold-rule"></div>
+      <p class="section-intro">Specific assignments for each image asset to maximize impact across different content formats and channels.</p>
+
+      <div class="img-assign">
+        <div class="img-assign-card">
+          <img src="https://ik.imagekit.io/xtj3m9hth/Hero.jpeg" alt="Hero Image — Stage Spotlight" />
+          <div class="img-assign-body">
+            <span class="img-role-badge badge-hero">Main Announcement</span>
+            <h4>The "Hero" Image</h4>
+            <p>The dramatic stage spotlight composition communicates theatrical excellence and commanding presence instantly. This is the primary visual for the announcement post, paid ads, and website banner.</p>
+          </div>
+        </div>
+        <div class="img-assign-card">
+          <img src="https://ik.imagekit.io/xtj3m9hth/Mentorship%201.jpeg" alt="Behind the Scenes — Studio Teaching" />
+          <div class="img-assign-body">
+            <span class="img-role-badge badge-bts">Behind the Scenes</span>
+            <h4>Stories &amp; Carousel</h4>
+            <p>The intimate mentorship scene — kneeling to the student's level — captures the warmth and personal attention of the program. Ideal for Instagram Stories, carousel slides, and WhatsApp broadcasts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"><hr/></div>
+
+  <!-- INITIAL VISUALS GALLERY -->
+  <section class="section">
+    <div class="section-label">Section 04</div>
+    <h2 class="section-title">Initial Visual Concepts</h2>
+    <div class="gold-rule"></div>
+
+    <div class="disclaimer" style="margin-bottom:40px; margin-top:0;">
+      <p><strong>These are initial creative concepts only.</strong> They are not final production assets. Their purpose is to communicate the intended visual direction, mood, and tone for your feedback. Final visuals will be produced with professional photography and your direct involvement.</p>
+    </div>
+
+    <div class="visuals-grid">
+      <div class="visual-card">
+        <img src="https://ik.imagekit.io/xtj3m9hth/On%20Stage.jpg" alt="Visual Concept 1 — The Stage" />
+        <div class="visual-card-body">
+          <div class="visual-num">Concept 01</div>
+          <h4>The Stage — Commanding Presence</h4>
+          <p>A dramatic stage setting with theatrical curtains and spotlight. Communicates authority, heritage, and the prestige of the program. Ideal for the primary announcement post.</p>
+          <span class="visual-tag">Instagram Post · Facebook Ad</span>
+        </div>
+      </div>
+      <div class="visual-card">
+        <img src="https://ik.imagekit.io/xtj3m9hth/Hero.jpeg" alt="Visual Concept 2 — The Duality" />
+        <div class="visual-card-body">
+          <div class="visual-num">Concept 02</div>
+          <h4>The Duality — Mentor &amp; Studio</h4>
+          <p>A split composition contrasting the mentor's professional presence with the energy of the studio environment. Communicates the bridge between professional expertise and accessible learning.</p>
+          <span class="visual-tag">Hero Banner · Paid Ad</span>
+        </div>
+      </div>
+      <div class="visual-card">
+        <img src="https://ik.imagekit.io/xtj3m9hth/Mentorship%202.jpeg" alt="Visual Concept 3 — The Mentorship" />
+        <div class="visual-card-body">
+          <div class="visual-num">Concept 03</div>
+          <h4>The Mentorship — Personal Attention</h4>
+          <p>An intimate moment of direct mentorship between the instructor and a young student. Communicates warmth, personal attention, and the transformative power of one-on-one guidance.</p>
+          <span class="visual-tag">Stories · Carousel · WhatsApp</span>
+        </div>
+      </div>
+      <div class="visual-card">
+        <img src="https://ik.imagekit.io/xtj3m9hth/sission%20in%20studio.jpeg" alt="Visual Concept 4 — Where Discipline Meets Drama" />
+        <div class="visual-card-body">
+          <div class="visual-num">Concept 04</div>
+          <h4>The Silhouette — Aspirational Drama</h4>
+          <p>A cinematic, minimalist composition with the headline "Where Discipline Meets Drama." The silhouette approach creates mystique and aspiration. Perfect for Instagram Stories and Reels covers.</p>
+          <span class="visual-tag">Instagram Story · Reel Cover</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"><hr/></div>
+
+  <!-- HERO POST -->
+  <section class="section section-dark" style="background:#111; max-width:100%; padding:80px 0;">
+    <div style="max-width:960px; margin:0 auto; padding:0 24px;">
+      <div class="section-label">Section 05</div>
+      <h2 class="section-title">The "Hero" Post Layout</h2>
+      <div class="gold-rule"></div>
+      <p class="section-intro">The primary announcement post combining prestige positioning with developmental benefits in a single, cohesive caption.</p>
+
+      <div class="hero-post-layout">
+        <div class="hero-post-mock">
+          <img src="https://ik.imagekit.io/xtj3m9hth/sission%20in%20studio1.jpg" alt="Hero Post Visual" />
+          <div class="hero-post-overlay">
+            <div class="hero-post-headline">"Where Discipline Meets Drama."</div>
+            <div class="hero-post-sub">Premier Ballet Academy × Yasser Farag</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="caption-block">
+            <h4>Post Caption</h4>
+            <p>The stage demands more than just talent; it requires profound discipline, emotional intelligence, and an undeniable presence. Premier Ballet Academy is honored to welcome celebrated Egyptian actor Yasser Farag to lead our exclusive 3-month Drama &amp; Acting Masterclass.</p>
+            <p>Drawing from a distinguished career in television and cinema, Yasser brings industry-level rigor directly to our studios. But this is more than an acting course — it is a transformative journey in character building. Under his expert mentorship, young performers will learn to harness their emotions, build unshakable self-confidence, and command any room they enter.</p>
+            <p>From the technical precision of the Russian Ballet system to the emotional depth of the dramatic arts, we are shaping the complete performer.</p>
+            <div class="caption-cta">
+              📍 Maadi &amp; Tagamoa<br/>
+              📅 Commencing April 18th<br/>
+              👥 Ages 8–12 &nbsp;|&nbsp; 13–20<br/><br/>
+              Spaces are strictly limited to ensure personalized mentorship. Send us a direct message to inquire about enrollment and secure your place under the spotlight.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"><hr/></div>
+
+  <!-- INTRO REEL SCRIPT -->
+  <section class="section">
+    <div class="section-label">Section 06</div>
+    <h2 class="section-title">Intro Reel Script (30 Seconds)</h2>
+    <div class="gold-rule"></div>
+    <p class="section-intro">A short, warm, and authoritative script for Yasser Farag to film at home or in the studio. Tone: professional, inviting, and deeply personal.</p>
+
+    <div class="script-timeline">
+      <div class="script-beat">
+        <div class="script-time">0:00 – 0:05</div>
+        <div class="script-direction">Visual: Direct eye contact with camera. Warm but serious expression. Slight pause before speaking.</div>
+        <div class="script-line">"Every great performance you see on screen or on stage starts with one thing: absolute confidence."</div>
+      </div>
+      <div class="script-beat">
+        <div class="script-time">0:05 – 0:15</div>
+        <div class="script-direction">Visual: Subtle zoom in. Tone becomes more intimate and personal.</div>
+        <div class="script-line">"I'm Yasser Farag, and I am thrilled to partner with Premier Ballet Academy for an exclusive 3-month Drama and Acting Masterclass. We are bringing the discipline of the studio together with the emotional depth of the theater."</div>
+      </div>
+      <div class="script-beat">
+        <div class="script-time">0:15 – 0:22</div>
+        <div class="script-direction">Visual: Yasser gestures slightly, emphasizing the core message. This is the key phrase.</div>
+        <div class="script-line" style="border-left-color:var(--gold); background:rgba(201,168,76,0.06);">"In this program, I'm not just teaching acting — <strong style="color:var(--gold);">I'm teaching how to own the stage.</strong> We will focus on character building, emotional intelligence, and true presence."</div>
+      </div>
+      <div class="script-beat">
+        <div class="script-time">0:22 – 0:30</div>
+        <div class="script-direction">Visual: Warm smile. Inviting, open gesture toward the camera.</div>
+        <div class="script-line">"Whether you are 8 or 20 — if you are ready to discover your true potential, I'll see you in Maadi and Tagamoa this April. Send Premier Ballet Academy a message to join us."</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"><hr/></div>
+
+  <!-- CTA PROTOCOL -->
+  <section class="section section-dark" style="background:#111; max-width:100%; padding:80px 0;">
+    <div style="max-width:960px; margin:0 auto; padding:0 24px;">
+      <div class="section-label">Section 07</div>
+      <h2 class="section-title">Call-to-Action &amp; Community Management</h2>
+      <div class="gold-rule"></div>
+      <p class="section-intro">The pricing strategy maintains premium exclusivity. All pricing inquiries are handled privately via direct message only.</p>
+
+      <div class="cta-rule">
+        <p><strong>Strategic Rule:</strong> Program pricing is strictly confidential and must never appear in public posts, comments, or stories. This maintains the premium exclusivity of the masterclass and allows the team to personally qualify and welcome each family. All inquiries are redirected to a private direct message.</p>
+      </div>
+
+      <div class="cta-cards">
+        <div class="cta-card">
+          <h4>Response Template — English</h4>
+          <div class="response-bubble">
+            "Hello [Name]! 🌟 We are so excited about this exclusive masterclass with Yasser Farag. Because spaces are strictly limited to ensure personalized mentorship, we handle all enrollments directly. We have just sent you a private message with the full program details, schedule, and investment information. Please check your inbox!"
+          </div>
+        </div>
+        <div class="cta-card">
+          <h4>Response Template — Arabic</h4>
+          <div class="response-bubble" dir="rtl" style="text-align:right; font-size:13px; line-height:1.9;">
+            "أهلاً بك [الاسم]! 🌟 نحن متحمسون جداً لهذا البرنامج الحصري مع الفنان ياسر فرج. لضمان جودة التدريب، الأعداد محدودة جداً. لقد أرسلنا لك رسالة خاصة تحتوي على كافة التفاصيل، المواعيد، ورسوم الاشتراك. يرجى مراجعة صندوق الرسائل!"
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Premier Ballet Academy <span>×</span> Yasser Farag</div>
+    <p style="margin-top:8px;">Drama &amp; Acting Masterclass · Maadi &amp; Tagamoa · Commencing April 18, 2026</p>
+    <p style="margin-top:16px;">This document is confidential and prepared for Yasser Farag's review and approval only.</p>
+    <p style="margin-top:8px;">© 2026 Premier Ballet Academy. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
